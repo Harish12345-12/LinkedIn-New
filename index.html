@@ -1,0 +1,515 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,maximum-scale=1,user scalable=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/styles.css" >
+    <script src="javascript.js" defer></script>
+    <title>linkedIn clone</title>
+    <style>
+      @media screen and (max-width: 767px) {
+        .header_right h3 {
+          display: none;
+        }
+        
+        .footeropt p{
+            display: none;
+        }
+        .body_main {
+          flex-direction: column;
+        }
+        .sidebar {
+          position: static;
+        }
+        .feed {
+          margin: 20px 0;
+        }
+      }
+      @media screen and (max-width: 641px) {
+        .header_left,
+        .input_options h4 {
+          display: none;
+        }
+        .feed_input1{
+          width:80%;
+        }
+        .footeropt{
+            display: none;
+            
+        }
+      }  
+     
+     </style>
+   
+  </head>
+  <body>
+    <div class="header">
+      <div class="header_left">
+        <img src="./images/img.jpeg" alt="" />
+        <div class="header_search">
+          <i class="material-icons"> search </i>
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+      <div class="header_right">
+        <div class="header_option">
+          <i class="material-icons header_option_icon"> home </i>
+          <h3>Home</h3>
+        </div>
+        <div class="header_option">
+          <i class="material-icons header_option_icon"> people </i>
+          <h3>My Network</h3>
+        </div>
+        <div class="header_option">
+          <i class="material-icons header_option_icon"> work </i>
+          <h3>Jobs</h3>
+        </div>
+        <div class="header_option">
+          <i class="material-icons header_option_icon"> textsms </i>
+          <h3>Messaging</h3>
+        </div>
+        <div class="header_option">
+          <i class="material-icons header_option_icon"> notifications </i>
+          <h3>Notifications</h3>
+        </div>
+        <div class="header_option">
+          <i class="material-icons header_option_icon"> person_pin </i>
+          <h3>Me</h3>
+        </div>
+      </div>
+    </div>
+    <div class="body_main">
+      <div class="sidebar">
+        <div class="sidebar_top">
+          <img src="./images/html.jpeg " alt="" />
+          <i class="sidebar_topavatar">
+            <img src="./images/download2.jpeg" alt="" />
+          </i>
+          <h2>Harish Jaganathan</h2>
+          <h4>Front end developer at spotknack</h4>
+        </div>
+        <div class="sidebar_stats">
+          <div class="sidebar_stat">
+            <p>Connections</p>
+
+            <p class="sidebar_statNumber">81</p>
+          </div>
+          <div class="sidebar_stat">
+            <p>Grow your network</p>
+          </div>
+          <div class="sidebar_stat">
+            <p>Who viewed your profile</p>
+
+            <p class="sidebar_statNumber">49</p>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="sidebar_stat1">
+            <p>Access exclusive tools & insights</p>
+          </div>
+          <div class="sidebar_stat3">
+            <p>Try premium for FREE</p>
+          </div>
+
+          <div class="sidebar_stat2">
+            <p>My Items</p>
+          </div>
+        </div>
+        <div class="sidebar_bottom">
+          <h4>Recent</h4>
+          <div class="sidebar_recentitem">
+            <span class="sidebar_hash"
+              ><i class="material-icons"> history </i>
+            </span>
+            <p>Html&Css</p>
+          </div>
+          <div class="sidebar_recentitem">
+            <span class="sidebar_hash"
+              ><i class="material-icons"> history </i>
+            </span>
+            <p>javascript learners group</p>
+          </div>
+          <div class="sidebar_recentitem">
+            <span class="sidebar_hash"
+              ><i class="material-icons"> history </i>
+            </span>
+            <p>Developers week 2021</p>
+          </div>
+        </div>
+      </div>
+      <div class="feed">
+        <div class="feed_inputContainer">
+          
+            <div class="feed_input">
+              <img src="./images/download2.jpeg" alt="" />
+            </div>
+            <div class="feed_input1">
+              <form>
+                <input type="text" placeholder="Start a post" />
+              </form>
+            </div>
+            <div class="input_options">
+              <div class="inputoption">
+                <i style="color: #70b5f9" class="material-icons"> image </i>
+                <h4>Photo</h4>
+              </div>
+              <div class="inputoption">
+                <i style="color: greenyellow" class="material-icons">
+                  smart_display
+                </i>
+                <h4>Video</h4>
+              </div>
+              <div class="inputoption">
+                <i style="color: #e7a33e" class="material-icons"> event </i>
+                <h4>Event</h4>
+              </div>
+              <div class="inputoption">
+                <i style="color: pink" class="material-icons"> article </i>
+                <h4>Write Article</h4>
+              </div>
+            
+          </div>
+        </div>
+          <div class="post">
+            <div class="postheader">
+              <i class="material-icons sidebar_topAvatar"> account_circle </i>
+              <div class="postinfo">
+                <h2>Harish Jaganathan</h2>
+                <p>Job Description</p>
+              </div>
+            </div>
+            <div class="postbody">
+              <p>Message Here</p>
+            </div>
+            <div class="input_options">
+              <div class="inputoption">
+                <i style="color: gray" class="material-icons"> thumb_up </i>
+                <h4>Like</h4>
+              </div>
+              <div class="inputoption">
+                <i style="color: gray" class="material-icons"> comment </i>
+                <h4>Comment</h4>
+              </div>
+              <div class="inputoption">
+                <i style="color: gray" class="material-icons"> share </i>
+                <h4>Share</h4>
+              </div>
+              <div class="inputoption">
+                <i style="color: gray" class="material-icons"> send </i>
+                <h4>Send</h4>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="postheader">
+              <i class="material-icons sidebar_topAvatar"> account_circle </i>
+              <div class="postinfo">
+                <h2>Harish Jaganathan</h2>
+                <p>Job Description</p>
+              </div>
+            </div>
+            <div class="postbody">
+              <p>Message Here</p>
+            </div>
+            <div class="input_options">
+              <div class="inputoption">
+                <i style="color: gray" class="material-icons"> thumb_up </i>
+                <h4>Like</h4>
+              </div>
+              <div class="inputoption">
+                <i style="color: gray" class="material-icons"> comment </i>
+                <h4>Comment</h4>
+              </div>
+              <div class="inputoption">
+                <i style="color: gray" class="material-icons"> share </i>
+                <h4>Share</h4>
+              </div>
+              <div class="inputoption">
+                <i style="color: gray" class="material-icons"> send </i>
+                <h4>Send</h4>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="postheader">
+              <i class="material-icons sidebar_topAvatar"> account_circle </i>
+              <div class="postinfo">
+                <h2>Harish Jaganathan</h2>
+                <p>Job Description</p>
+              </div>
+            </div>
+            <div class="postbody">
+              <p>Message Here</p>
+            </div>
+            <div class="input_options">
+              <div class="inputoption">
+                <i style="color: gray" class="material-icons"> thumb_up </i>
+                <h4>Like</h4>
+              </div>
+              <div class="inputoption">
+                <i style="color: gray" class="material-icons"> comment </i>
+                <h4>Comment</h4>
+              </div>
+              <div class="inputoption">
+                <i style="color: gray" class="material-icons"> share </i>
+                <h4>Share</h4>
+              </div>
+              <div class="inputoption">
+                <i style="color: gray" class="material-icons"> send </i>
+                <h4>Send</h4>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="postheader">
+              <i class="material-icons sidebar_topAvatar"> account_circle </i>
+              <div class="postinfo">
+                <h2>Harish Jaganathan</h2>
+                <p>Job Description</p>
+              </div>
+            </div>
+            <div class="postbody">
+              <p>Message Here</p>
+            </div>
+            <div class="input_options">
+              <div class="inputoption">
+                <i style="color: gray" class="material-icons"> thumb_up </i>
+                <h4>Like</h4>
+              </div>
+              <div class="inputoption">
+                <i style="color: gray" class="material-icons"> comment </i>
+                <h4>Comment</h4>
+              </div>
+              <div class="inputoption">
+                <i style="color: gray" class="material-icons"> share </i>
+                <h4>Share</h4>
+              </div>
+              <div class="inputoption">
+                <i style="color: gray" class="material-icons"> send </i>
+                <h4>Send</h4>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="postheader">
+              <i class="material-icons sidebar_topAvatar"> account_circle </i>
+              <div class="postinfo">
+                <h2>Harish Jaganathan</h2>
+                <p>Job Description</p>
+              </div>
+            </div>
+            <div class="postbody">
+              <p>Message Here</p>
+            </div>
+            <div class="input_options">
+              <div class="inputoption">
+                <i style="color: gray" class="material-icons"> thumb_up </i>
+                <h4>Like</h4>
+              </div>
+              <div class="inputoption">
+                <i style="color: gray" class="material-icons"> comment </i>
+                <h4>Comment</h4>
+              </div>
+              <div class="inputoption">
+                <i style="color: gray" class="material-icons"> share </i>
+                <h4>Share</h4>
+              </div>
+              <div class="inputoption">
+                <i style="color: gray" class="material-icons"> send </i>
+                <h4>Send</h4>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="postheader">
+              <i class="material-icons sidebar_topAvatar"> account_circle </i>
+              <div class="postinfo">
+                <h2>Harish Jaganathan</h2>
+                <p>Job Description</p>
+              </div>
+            </div>
+            <div class="postbody">
+              <p>Message Here</p>
+            </div>
+            <div class="input_options">
+              <div class="inputoption">
+                <i style="color: gray" class="material-icons"> thumb_up </i>
+                <h4>Like</h4>
+              </div>
+              <div class="inputoption">
+                <i style="color: gray" class="material-icons"> comment </i>
+                <h4>Comment</h4>
+              </div>
+              <div class="inputoption">
+                <i style="color: gray" class="material-icons"> share </i>
+                <h4>Share</h4>
+              </div>
+              <div class="inputoption">
+                <i style="color: gray" class="material-icons"> send </i>
+                <h4>Send</h4>
+              </div>
+            </div>
+          </div>
+        
+      </div>
+      
+      <div class="widgets">
+        <div class="widgetshead">
+          <h2>LinkedIn UI Clone</h2>
+          <i class="material-icons"> info </i>
+        </div>
+        <div class="widgets_article">
+          <div class="widgetleft">
+            <i class="material-icons"> fiber_manual_record </i>
+          </div>
+          <div class="widgetright">
+            <h4>Coding LinkedIn UI Clone</h4>
+            <p>Top news - 4500 readers</p>
+          </div>
+        </div>
+        <div class="widgets_article">
+          <div class="widgetleft">
+            <i class="material-icons"> fiber_manual_record </i>
+          </div>
+          <div class="widgetright">
+            <h4>Coding LinkedIn UI Clone</h4>
+            <p>Top news - 4500 readers</p>
+          </div>
+        </div>
+        <div class="widgets_article">
+          <div class="widgetleft">
+            <i class="material-icons"> fiber_manual_record </i>
+          </div>
+          <div class="widgetright">
+            <h4>Coding LinkedIn UI Clone</h4>
+            <p>Top news - 4500 readers</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footeropt">
+          <i class="material-icons">
+            person
+          </i>
+       
+          </div>
+          <div class="footeropt">
+          <p>Messaging</p>
+          </div>
+
+          
+
+          <div class="footeropt">
+            <i  class="material-icons">
+              more_horiz
+              
+            </i>
+          </div>
+
+            <div class="footeropt">
+              
+                <i class="material-icons">
+                
+                  rate_review
+                </i>
+                  
+            
+              </div>
+              <div class="footeropt1">
+                  <button class="btn1" onclick="openchat()">
+                <i class="material-icons">
+                  
+                    expand_less
+                    
+                </i>
+            </button>
+            
+    <br />
+    <br />
+
+              </div>    
+      </div>
+<div id=container>
+  <div class="contain">
+  <div class="footeropt">
+    <i class="material-icons">
+      person
+    </i>
+ 
+    </div>
+    <div class="footeropt">
+    <p>Messaging</p>
+    </div>
+
+    
+
+    <div class="footeropt">
+      <i  class="material-icons">
+        more_horiz
+        
+      </i>
+    </div>
+
+      <div class="footeropt">
+        
+          <i class="material-icons">
+          
+            rate_review
+          </i>
+            
+      
+        </div>
+        <div class="footeropt1">
+            <button class="btn1" onclick="closechat()">
+          <i class="material-icons">
+            
+            
+              expand_more
+              
+          </i>
+      </button>
+        </div>  
+  </div> 
+        <div class="container1"> 
+        <div class="search">
+          
+            <i class="material-icons">
+              search
+            </i>
+              
+          
+        </div>
+        
+    <input type="text" name="" id="filter-tag" />
+    <button onclick="filter()">Search</button>
+    
+    <div id="messages"></div>
+  
+
+        
+        
+        <div class="filter1">
+          <i class="material-icons">
+            filter_alt
+          </i>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
